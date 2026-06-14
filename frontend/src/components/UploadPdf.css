@@ -1,0 +1,71 @@
+.upload-pdf {
+  padding: 3rem 2rem;
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.upload-pdf:hover:not(.disabled) {
+  border-color: var(--teal-light);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.upload-pdf.disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.upload-pdf-ring {
+  display: inline-flex;
+  padding: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal-soft), var(--coral-soft));
+  margin-bottom: 1.25rem;
+}
+
+.upload-pdf-icon {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--teal);
+  box-shadow: var(--shadow-sm);
+}
+
+.upload-pdf h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+
+.upload-pdf p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.upload-pdf-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.upload-pdf-tags span {
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
